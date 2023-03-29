@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.ukazka_inline{
+    background-color: orange;
+    display: block;
+}
+
+.ukazka_block{
+    background-color: green;
+    display: block;
+    
+
+}
+
+.new_line{
+    clear: left;
+    
+}
+
+.ukazka_block,.ukazka_inline{
+    top: 15px;
+    left: 15px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 150px; height: 150px;
+    position: relative;
+    float:left;
+   margin-right:15px ;
+
+}

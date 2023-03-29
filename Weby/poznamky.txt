@@ -1,0 +1,36 @@
+    flex-start: Zarovnat prvky vlevo.
+    flex-end: Zarovnat prvky vpravo.
+    center: Zarovnat prvky na střed.
+    space-between: Rozmístit rovnoměrné mezery mezi prvky.
+    space-around: Rozmístit rovnoměrné mezery kolem prvků.
+
+Například styl justify-content: flex-end; posune žabku doprava.
+
+
+ align-items
+     flex-start: Zarovná prvky nahoru.
+    flex-end: Zarovná prvky dolů.
+    center: Zarovná prvky na střed kontejneru.
+    baseline: Zarovná prvky na účaří.
+    stretch: Roztáhne prvky tak, aby vyplnily kontejner.
+
+flex-direction
+     row: Řádky ve směru textu.
+    row-reverse: Řádky proti směru textu.
+    column: Sloupce shora dolů.
+    column-reverse: Sloupce zdola nahoru.
+
+order seřadí
+
+flex-wrap
+    nowrap: Všechny prvky na jednen řádek.
+    wrap: Umožňuje zalomení na více řádků.
+    wrap-reverse: Umožňuje zalomení, ale v opačném směru.
+
+align-content mezery mezi řádky
+    flex-start: Hromadí řádky na horní straně kontejneru.
+    flex-end: Hromadí řádky na spodní straně kontejneru.
+    center: Hromadí řádky na svislém středu kontejneru.
+    space-between: Rozmístí rovnoměrné mezery mezi řádky.
+    space-around: Rozmístí rovnoměrné mezery kolem řádků.
+    stretch: Roztáhne řádky, aby vyplnily kontejner.

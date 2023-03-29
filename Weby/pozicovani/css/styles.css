@@ -1,0 +1,38 @@
+body{
+background-image: url("../img/terry-davis-wobble.gif");
+margin: 0px;
+}
+
+#test{
+background-color: orange;
+width: 75%;
+height: 300px;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 auto;
+
+text-align: center;
+border: 10px solid rgb(0, 0, 0);
+position: relative;
+}
+
+#unvitr{
+background-color: aqua;
+position: absolute;
+top: 10px; left: 50%;
+width: 15px; height: 15px;
+}
+
+#sklad{
+width: 61%;
+margin: 0 auto;
+
+}
+.element{
+    background-color: black;
+    width: 50px; height: 100px;
+    margin: 8px;
+
+    float: left;
+
+}
