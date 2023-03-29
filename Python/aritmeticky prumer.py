@@ -7,3 +7,4 @@ for i in range(pocet):
     znamka=znamka+znamkaplus
 
 print("Tvůj průměr je ",znamka)
+#testost github
