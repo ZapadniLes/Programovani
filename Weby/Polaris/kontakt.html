@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/style-kontakt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+<body>
+    
+    <div id="banner">
+        <img src="img/logo.png" alt="logo">
+        <h1><a href="index.html">Polaris</a></h1>
+    </div>
+    <br>
+
+    <div class="fixed-header" id="header">
+        <div class="container">
+            <nav>
+                <a href="podstranky/o-nas.html"><b>O nás</b></a>
+                <a href=""><b>GitHub</b></a>
+                <a href="podstranky/dokumentace.html"><b>Dokumentace</b></a>
+                <a href="podstranky/kontakt.html"><b>Kontakt</b></a>
+                <a href="podstranky/prispet.html"><b>Přispět</b></a>
+                <a href="podstranky/galerie.html"><b>Galerie</b></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pole">
+
+
+
+
+    </div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header");
+
+
+    var sticky = header.offsetTop;
+
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+
+</script>
+
+</body>
+</html>

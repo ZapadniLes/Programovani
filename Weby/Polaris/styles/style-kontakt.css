@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Oswald";
+    src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+
+body{
+    margin:0;
+    background: linear-gradient(270deg, #ff8a00, #3e0266);
+    background-size: 400% 400%;
+
+    -webkit-animation: Animation1 30s ease infinite;
+    -moz-animation: Animation2 30s ease infinite;
+    animation: Animation3 30s ease infinite;
+    font-family: Oswald;
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+}
+
+#banner {
+    position:relative;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    align-items: center;
+    margin: 5% 5%;
+  }
+  
+  #banner img {
+    width: 7%;
+    height: auto;
+    float: left;
+    margin: 0px;
+  }
+
+  #banner h1{
+    color: rgb(255, 255, 255);
+    font-family: Oswald;
+    font-size: 2.5vw;
+    
+  }
+
+  .fixed-header{
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: -5%;
+    text-align: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+  nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 4vw;
+    display: inline-block;
+    height: auto;
+    font-size: 1.5vw;
+}
+  nav a:hover{
+    background: #000000a1;
+    
+    color: #ffffff;
+}
+
+.pole{
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 90%;
+    height: 50vw;
+    margin-left: 5%;
+    margin-top: 1.3%;
+
+
+}
+  
+  @media (max-width: 768px) {
+    /* Styl pro mobilní zařízení */
+  
+    #banner img {
+      width: 15%;
+    }
+    #banner h1{
+        font-size: 5.3vw;
+      }
+    nav a{
+        padding: 7px 1.2vw;
+        font-size: 3.5vw;
+    }
+
+  }
+
+@-webkit-keyframes Animation1 {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Animation2 {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Animation3 {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
