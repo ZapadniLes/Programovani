@@ -3,9 +3,9 @@ import cv2
 import numpy as np
 import imutils
 import tkinter as tk
-import datetime
 from PIL import Image
-import zbar
+import zxing
+import webbrowser
 
 url = "http://192.168.137.191:8080/shot.jpg"
 
@@ -15,22 +15,17 @@ def capture_image():
     img = cv2.imdecode(img_arr, -1)
     img = imutils.resize(img, width=1000, height=1800)
     cv2.imshow("Android_cam", img)
-    filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + ".png"
-    cv2.imwrite(filename, img)
-    print("Obrázek uložen jako:", filename)
-    decode_qr_code(filename)
+    decode_qr_code(img)
+    
 
 
-def decode_qr_code(image_path):
-    img = Image.open(image_path).convert("L")
-    width, height = img.size
-    raw = img.tobytes()
-
-    scanner = zbar.Scanner()
-    results = scanner.scan(raw, width, height)
-
-    for result in results:
-        print("Obsah QR kódu:", result.data.decode("utf-8"))
+def decode_qr_code(image):
+    pil_image = Image.fromarray(image)
+    pil_image.save("temp.jpg")
+    barcode = zxing.BarCodeReader().decode("temp.jpg", try_harder=True)
+    if barcode is not None:
+        print("Obsah QR kódu:", barcode.raw)
+        webbrowser.open(barcode.raw, new=2)
 
 root = tk.Tk()
 
@@ -45,7 +40,6 @@ while True:
     img = cv2.imdecode(img_arr, -1)
     img = imutils.resize(img, width=1000, height=1800)
     cv2.imshow("Android_cam", img)
-
     if cv2.waitKey(10) & 0xFF == ord('q'):  # Press 'q' key to exit
         break
 
